@@ -7,9 +7,26 @@ st.set_page_config(
     page_title="Cherry Task Manager",
     layout="centered"
 )
-
-st.title("🍒Cherry Task Manager🍒")
-st.markdown("Herzlich willkommen! Erstelle deine Aufgaben und ordne sie den richtigen Listen zu.🍒")
+# Hintergrundfarbe anpassen
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #ffdbe4;
+    }
+    .stApp {
+        background-color: #ffdbe4;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+# Titel und Untertitel
+st.markdown(
+    "<h1 style='color:#d72660; text-align:center;'>🍒 Cherry Task Manager 🍒</h1>",
+    unsafe_allow_html=True
+)
+st.markdown('<span style="color: #00965c; font-size: 22px; text-align:center;">🍒 Willkommen bei Cherry Task Manager! Erstelle To Do Listen 🍒</span>', unsafe_allow_html=True)
 
 # Session State initialisieren
 if "tasks" not in st.session_state:
@@ -31,7 +48,6 @@ reminder_date = st.date_input("Erinnerungsdatum wählen", value=date.today())
 subject = st.text_input("Aufgabenbetreff eingeben")
 description = st.text_area("Beschreibung einfügen")
 priority = st.selectbox("Priorität wählen", ["High", "Medium", "Low"])
-
 
 # Liste für neue Aufgabe auswählen
 selected_list = st.selectbox("Liste auswählen", st.session_state.lists, key="select_list")
