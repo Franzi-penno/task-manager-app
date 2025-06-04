@@ -42,7 +42,7 @@ if st.button("Aufgabe hinzufügen"):
 if st.session_state.tasks:
     st.subheader("Aufgabenliste")
     for i, task in enumerate(st.session_state.tasks):
-        col1, col2 = st.columns([4, 1])
+        col1, col2, col3 = st.columns([4, 1, 1])
         with col1:
             st.markdown(f"### {task['Betreff']}")
             st.write(f"**Beschreibung:** {task['Beschreibung']}")
@@ -53,9 +53,11 @@ if st.session_state.tasks:
             done = st.checkbox("Erledigt", key=f"done_{i}")
             if done:
                 st.session_state.tasks.pop(i)
-                st.experimental_rerun()
+                st.rerun()
+        with col3:
+            if st.button("Löschen", key=f"delete_{i}"):
+                st.session_state.tasks.pop(i)
+                st.rerun()
         st.markdown("---")
 else:
     st.info("Noch keine Aufgaben gespeichert.")
-
-# Hallo Welt das ist eine neue Zeile
