@@ -121,3 +121,17 @@ if tasks_to_show:
         st.markdown("---")
 else:
     st.info("Noch keine Aufgaben in dieser Liste gespeichert.")
+
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Altrosa Hintergrund")
+
+# Setze die Hintergrundfarbe auf Altrosa (#E5A9B6)
+root.configure(bg="#E5A9B6")
+
+# Optional: Füge ein Label hinzu
+label = tk.Label(root, text="Hallo, das ist Altrosa!", bg="#E5A9B6", fg="#333")
+label.pack(padx=30, pady=30)
+
+root.mainloop()
