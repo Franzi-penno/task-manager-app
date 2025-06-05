@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import date
+from task_storage import load_tasks, save_tasks
 
 if 'tasks' not in st.session_state:
     st.session_state['tasks'] = []  # <-- Liste, nicht Dictionary!
@@ -25,8 +26,8 @@ st.markdown(
 )
 
 # Session State initialisieren
-if "tasks" not in st.session_state:
-    st.session_state.tasks = []
+if 'tasks' not in st.session_state:
+    st.session_state['tasks'] = load_tasks()
 
 # Listen initialisieren
 if "lists" not in st.session_state:
@@ -61,6 +62,7 @@ if st.button("Aufgabe hinzufügen"):
             "Liste": selected_list
         }
         st.session_state.tasks.append(task)
+        save_tasks(st.session_state.tasks)
         st.success("Aufgabe hinzugefügt!")
     else:
         st.warning("Bitte gib einen Aufgabenbetreff ein.")
