@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import date
 
 if 'tasks' not in st.session_state:
-    st.session_state['tasks'] = {}
+    st.session_state['tasks'] = []  # <-- Liste, nicht Dictionary!
 
 st.markdown(
     """
