@@ -96,4 +96,3 @@ if tasks_to_show:
         st.markdown("---")
 else:
     st.info("Noch keine Aufgaben in dieser Liste gespeichert.")
-
