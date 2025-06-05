@@ -7,6 +7,13 @@ st.set_page_config(
     page_title="Cherry Task Manager",
     layout="centered"
 )
+
+# Seiten-Auswahl in der Sidebar
+page = st.sidebar.selectbox(
+    "Navigation",
+    ["Willkommen", "Aufgabe hinzufügen", "Listen anzeigen"]
+)
+
 # Hintergrundfarbe anpassen
 st.markdown(
     """
