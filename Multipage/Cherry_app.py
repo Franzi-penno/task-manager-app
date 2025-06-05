@@ -8,11 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# Seiten-Auswahl in der Sidebar
-page = st.sidebar.selectbox(
-    "Navigation",
-    ["Willkommen", "Aufgabe hinzufügen", "Listen anzeigen"]
-)
+st.sidebar.success("Select a demo above.")
 
 # Hintergrundfarbe anpassen
 st.markdown(
