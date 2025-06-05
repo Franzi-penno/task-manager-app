@@ -73,6 +73,10 @@ if st.button("Aufgabe hinzufügen"):
 chosen_list = st.selectbox("Welche Liste anzeigen?", st.session_state.lists, key="view_list")
 tasks_to_show = [t for t in st.session_state.tasks if t["Liste"] == chosen_list]
 
+# Aufgaben nach Priorität sortieren (High > Medium > Low)
+priority_order = {"High": 0, "Medium": 1, "Low": 2}
+tasks_to_show = sorted(tasks_to_show, key=lambda t: priority_order.get(t["Priorität"], 3))
+
 # Aufgabenliste anzeigen (nur gefilterte Aufgaben)
 if tasks_to_show:
     st.subheader(f"Aufgabenliste: {chosen_list}")
