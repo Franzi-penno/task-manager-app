@@ -50,7 +50,6 @@ if all_tasks:
         st.markdown(f"<b style='color:#d72660'>{task['Betreff']}</b>", unsafe_allow_html=True)
         st.write(f"**Beschreibung:** {task['Beschreibung']}")
         st.write(f"**Fällig am:** {task['Fällig am']}")
-        st.write(f"**Erinnerung am:** {task['Erinnerung am']}")
         st.write(f"**Priorität:** {task['Priorität']}")
         st.write(f"**Liste:** {task['Liste']}")
         st.markdown("---")
@@ -58,7 +57,3 @@ else:
     st.info("Es gibt keine Aufgaben, die zu deiner Suche passen.")
 
 save_tasks(st.session_state['tasks'])
-
-neue_liste = "Meine neue Liste"  # Beispiel für eine neue Liste
-st.session_state.lists.append(neue_liste)
-save_lists(st.session_state.lists)

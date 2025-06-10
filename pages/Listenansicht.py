@@ -70,7 +70,6 @@ if tasks_to_show:
                 st.markdown(f"### {task['Betreff']}")
                 st.write(f"**Beschreibung:** {task['Beschreibung']}")
                 st.write(f"**Fällig am:** {task['Fällig am']}")
-                st.write(f"**Erinnerung am:** {task['Erinnerung am']}")
                 st.write(f"**Priorität:** {task['Priorität']}")
         with col2:
             done = st.checkbox("Erledigt", key=f"done_{i}")
