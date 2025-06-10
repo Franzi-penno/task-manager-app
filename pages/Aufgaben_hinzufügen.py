@@ -1,9 +1,11 @@
 import streamlit as st
 from datetime import date
-from task_storage import load_tasks, save_tasks
+from task_storage import load_tasks, save_tasks, load_lists, save_lists
 
 if 'tasks' not in st.session_state:
-    st.session_state['tasks'] = []  # <-- Liste, nicht Dictionary!
+    st.session_state['tasks'] = load_tasks()
+if 'lists' not in st.session_state:
+    st.session_state['lists'] = load_lists()
 
 st.markdown(
     """
@@ -38,6 +40,7 @@ new_list = st.text_input("Neue Liste anlegen", key="new_list")
 if st.button("Liste hinzufügen"):
     if new_list and new_list not in st.session_state.lists:
         st.session_state.lists.append(new_list)
+        save_lists(st.session_state.lists)
         st.success(f"Liste '{new_list}' hinzugefügt!")
 # Eingabefelder
 due_date = st.date_input("Fälligkeitsdatum auswählen", value=date.today())
@@ -62,7 +65,7 @@ if st.button("Aufgabe hinzufügen"):
             "Liste": selected_list
         }
         st.session_state.tasks.append(task)
-        save_tasks(st.session_state.tasks)
+        save_tasks(st.session_state['tasks'])
         st.success("Aufgabe hinzugefügt!")
     else:
         st.warning("Bitte gib einen Aufgabenbetreff ein.")

@@ -1,9 +1,11 @@
 import streamlit as st
 from datetime import date
-from task_storage import load_tasks, save_tasks
+from task_storage import load_tasks, save_tasks, load_lists, save_lists
 
 if 'tasks' not in st.session_state:
-    st.session_state['tasks'] = []
+    st.session_state['tasks'] = load_tasks()
+if 'lists' not in st.session_state:
+    st.session_state['lists'] = load_lists()
 
 st.markdown(
     """
@@ -54,3 +56,9 @@ if all_tasks:
         st.markdown("---")
 else:
     st.info("Es gibt keine Aufgaben, die zu deiner Suche passen.")
+
+save_tasks(st.session_state['tasks'])
+
+neue_liste = "Meine neue Liste"  # Beispiel für eine neue Liste
+st.session_state.lists.append(neue_liste)
+save_lists(st.session_state.lists)

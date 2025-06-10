@@ -1,9 +1,11 @@
 import streamlit as st
 from datetime import date
-from task_storage import load_tasks, save_tasks
+from task_storage import load_tasks, save_tasks, load_lists, save_lists
 
 if 'tasks' not in st.session_state:
-    st.session_state['tasks'] = []
+    st.session_state['tasks'] = load_tasks()
+if 'lists' not in st.session_state:
+    st.session_state['lists'] = load_lists()
 
 st.markdown(
     """
@@ -59,6 +61,7 @@ if tasks_to_show:
                         "Liste": task["Liste"]
                     }
                     st.session_state.edit_index = None
+                    save_tasks(st.session_state['tasks'])
                     st.rerun()
                 if st.button("Abbrechen", key=f"cancel_{i}"):
                     st.session_state.edit_index = None
@@ -79,6 +82,7 @@ if tasks_to_show:
                 task["Liste"] = "Erledigt"
                 st.session_state.tasks.append(task)
                 st.session_state.tasks.remove(task)
+                save_tasks(st.session_state['tasks'])
                 st.rerun()
         with col3:
             if st.button("Löschen", key=f"delete_{i}"):
@@ -89,6 +93,7 @@ if tasks_to_show:
                 task["Liste"] = "Gelöscht"
                 st.session_state.tasks.append(task)
                 st.session_state.tasks.remove(task)
+                save_tasks(st.session_state['tasks'])
                 st.rerun()
         with col4:
             if st.button("change", key=f"edit_{i}"):
