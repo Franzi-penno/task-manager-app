@@ -20,9 +20,24 @@ Was noch fehlt, ist die Umstellung der Seite auf eine Multi-Page-Ansicht und ein
 
 
 Was ist in der vergangen Springts gut gelaufen?
+struktur, zuordnung der arbeit, umsetzung hat fast immer problemlos funktioniert, Feinheiten haben gut funktioniert
 
 Wo stehen wir gerade & was kommt als nächstes?
+App fertig, URL auch vorhanden/finalisiert. 
 
-Wie hat sich die KOmplexität in unserem Projekt entwickelt?
+Wie hat sich die Komplexität in unserem Projekt verändert und welche Herausforderungen waren damit verbunden?
+Umso weiter die App aufgebaut war desto komplexer wurde es. Auch die User-STorys bzw Anforderungen wurden detaillierter und komplexer. Herausforderungen waren auf jeden Fall, als neue Details erstellt wurden kamen an dánderen Stellen Blockaden bzw Fehlermeldungen auf --> also der code an sich wurde verknüpfter und komplexer.
 
-Wie gehen wir damit um?
+Wie gehen wir im Projekt aktuell mit diesen Herausforderungen um?
+Wir versuchen Schritt für Schritt Herausforderungen zu lösen, wir probieren viel aus, falls Fehler entstanden sind wurde hauptsächlich daran gearbeitet diese wieder zu lösen. Allgemein wurde sehr aufbauend gearbeitet.
+
+
+
+das ist der text ausformuleirt noch überprüfen!!!!
+In dem vergangenen Sprint verliefen viele Aspekte sehr gut. Die Struktur im Team war klar, die Aufgabenverteilung funktionierte reibungslos, und die Umsetzung der einzelnen Arbeitspakete lief nahezu problemlos. Besonders bei der Ausarbeitung von Details zeigte sich eine hohe Qualität in der Umsetzung, wodurch ein insgesamt sehr stabiler Arbeitsfluss entstand.
+
+Aktuell ist die App in ihrer finalen Version fertiggestellt, inklusive einer finalisierten und funktionierenden URL. Das Projekt befindet sich somit in einer fortgeschrittenen Phase, in der die Grundfunktionen implementiert und die technischen Rahmenbedingungen geschaffen wurden.
+
+Mit dem fortschreitenden Aufbau der App stieg auch die Komplexität des Projekts deutlich an. Die Anforderungen, insbesondere im Hinblick auf die User Stories, wurden zunehmend detaillierter, was zu einem höheren Entwicklungsaufwand führte. Neue Features oder Änderungen in einzelnen Bereichen hatten häufig unerwartete Auswirkungen an anderer Stelle. Dadurch wurde der Code zunehmend vernetzter, was mit einem höheren Maß an Fehleranfälligkeit einherging.
+
+Mit diesen Herausforderungen wird im Team sehr lösungsorientiert umgegangen. Probleme werden Schritt für Schritt bearbeitet, wobei viel ausprobiert und getestet wird, um passende Lösungen zu finden. Fehler werden systematisch analysiert und gezielt behoben. Insgesamt ist die Projektarbeit sehr aufbauend gestaltet – jedes gelöste Problem bildet die Grundlage für den nächsten Entwicklungsschritt.
