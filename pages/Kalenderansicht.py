@@ -10,8 +10,11 @@ st.markdown("<h2 style='color:#d72660;'>📅 Kalenderansicht deiner Aufgaben</h2
 # Aufgaben in Kalender-Events umwandeln
 events = []
 for task in st.session_state['tasks']:
-    # Nur Aufgaben mit Fälligkeitsdatum anzeigen
-    if "Fällig am" in task and task["Fällig am"]:
+    # Nur Aufgaben mit Fälligkeitsdatum anzeigen, die NICHT erledigt oder gelöscht sind
+    if (
+        "Fällig am" in task and task["Fällig am"]
+        and task.get("Liste") not in ["Erledigt", "Gelöscht"]
+    ):
         events.append({
             "title": task["Betreff"],
             "start": str(task["Fällig am"]),

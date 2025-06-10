@@ -36,7 +36,6 @@ else:
             st.markdown(f"<b style='color:#d72660'>{task['Betreff']}</b>", unsafe_allow_html=True)
             st.write(f"**Beschreibung:** {task['Beschreibung']}")
             st.write(f"**Fällig am:** {task['Fällig am']}")
-            st.write(f"**Erinnerung am:** {task['Erinnerung am']}")
             st.write(f"**Priorität:** {task['Priorität']}")
             st.markdown("---")
     else:
