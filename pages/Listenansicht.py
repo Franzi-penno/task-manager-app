@@ -81,7 +81,20 @@ if tasks_to_show:
                 task["Liste"] = "Erledigt"
                 st.session_state.tasks.append(task)
                 st.session_state.tasks.remove(task)
+                save_tasks(st.session_state['tasks'])                # Finde den echten Index in der Hauptliste
+                task = tasks_to_show[i]
+                real_index = st.session_state.tasks.index(task)
+                st.session_state.tasks[real_index] = {
+                    "Betreff": task["Betreff"],
+                    "Beschreibung": task["Beschreibung"],
+                    "Fällig am": task["Fällig am"],
+                    "Erinnerung am": task["Erinnerung am"],
+                    "Priorität": task["Priorität"],
+                    "Erledigt": True,
+                    "Liste": "Erledigt"
+                }
                 save_tasks(st.session_state['tasks'])
+                st.session_state.edit_index = None
                 st.rerun()
         with col3:
             if st.button("Löschen", key=f"delete_{i}"):
