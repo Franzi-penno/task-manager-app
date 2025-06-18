@@ -20,7 +20,11 @@ for task in st.session_state['tasks']:
             "start": str(task["Fällig am"]),
             "end": str(task["Fällig am"]),
             "color": "#d72660" if task.get("Priorität") == "High" else "#fbb13c" if task.get("Priorität") == "Medium" else "#00965c",
-            "description": task.get("Beschreibung", "")
+            "description": f"""
+                <b>Beschreibung:</b> {task.get('Beschreibung', '')}<br>
+                <b>Priorität:</b> {task.get('Priorität', '')}<br>
+                <b>Liste:</b> {task.get('Liste', '')}
+            """
         })
 
 calendar_options = {
