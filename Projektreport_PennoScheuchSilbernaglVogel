@@ -1,4 +1,4 @@
-Scrum-Retrospektive – Projekt Task Manager
+## Scrum-Retrospektive – Projekt Task Manager
 
 Scrum hat uns bei der Zusammenarbeit im Team und bei der agilen Entwicklung gut unterstützt. 
 Die klare Einteilung der Rollen und Aufgaben hat für Struktur und Übersichtlichkeit gesorgt. Die Einteilung war grundsätzlich sinnvoll – viele Aufgaben haben wir gemeinsam gelöst, was den Teamgeist gestärkt hat. 
@@ -19,21 +19,6 @@ Wir sind mit dem Projekt fast fertig. Unser Task Manager kann bereits:
 Was noch fehlt, ist die Umstellung der Seite auf eine Multi-Page-Ansicht und eine Sortierfunktion für die Aufgaben nach Priorität.
 
 
-Was ist in der vergangen Springts gut gelaufen?
-struktur, zuordnung der arbeit, umsetzung hat fast immer problemlos funktioniert, Feinheiten haben gut funktioniert
-
-Wo stehen wir gerade & was kommt als nächstes?
-App fertig, URL auch vorhanden/finalisiert. 
-
-Wie hat sich die Komplexität in unserem Projekt verändert und welche Herausforderungen waren damit verbunden?
-Umso weiter die App aufgebaut war desto komplexer wurde es. Auch die User-STorys bzw Anforderungen wurden detaillierter und komplexer. Herausforderungen waren auf jeden Fall, als neue Details erstellt wurden kamen an dánderen Stellen Blockaden bzw Fehlermeldungen auf --> also der code an sich wurde verknüpfter und komplexer.
-
-Wie gehen wir im Projekt aktuell mit diesen Herausforderungen um?
-Wir versuchen Schritt für Schritt Herausforderungen zu lösen, wir probieren viel aus, falls Fehler entstanden sind wurde hauptsächlich daran gearbeitet diese wieder zu lösen. Allgemein wurde sehr aufbauend gearbeitet.
-
-
-
-das ist der text ausformuleirt noch überprüfen!!!!
 In dem vergangenen Sprint verliefen viele Aspekte sehr gut. Die Struktur im Team war klar, die Aufgabenverteilung funktionierte reibungslos, und die Umsetzung der einzelnen Arbeitspakete lief nahezu problemlos. Besonders bei der Ausarbeitung von Details zeigte sich eine hohe Qualität in der Umsetzung, wodurch ein insgesamt sehr stabiler Arbeitsfluss entstand.
 
 Aktuell ist die App in ihrer finalen Version fertiggestellt, inklusive einer finalisierten und funktionierenden URL. Das Projekt befindet sich somit in einer fortgeschrittenen Phase, in der die Grundfunktionen implementiert und die technischen Rahmenbedingungen geschaffen wurden.
@@ -41,3 +26,12 @@ Aktuell ist die App in ihrer finalen Version fertiggestellt, inklusive einer fin
 Mit dem fortschreitenden Aufbau der App stieg auch die Komplexität des Projekts deutlich an. Die Anforderungen, insbesondere im Hinblick auf die User Stories, wurden zunehmend detaillierter, was zu einem höheren Entwicklungsaufwand führte. Neue Features oder Änderungen in einzelnen Bereichen hatten häufig unerwartete Auswirkungen an anderer Stelle. Dadurch wurde der Code zunehmend vernetzter, was mit einem höheren Maß an Fehleranfälligkeit einherging.
 
 Mit diesen Herausforderungen wird im Team sehr lösungsorientiert umgegangen. Probleme werden Schritt für Schritt bearbeitet, wobei viel ausprobiert und getestet wird, um passende Lösungen zu finden. Fehler werden systematisch analysiert und gezielt behoben. Insgesamt ist die Projektarbeit sehr aufbauend gestaltet – jedes gelöste Problem bildet die Grundlage für den nächsten Entwicklungsschritt.
+
+
+Im Verlauf des Projekts konnten zahlreiche User-Stories erfolgreich umgesetzt werden, was den Funktionsumfang und die Nutzerfreundlichkeit der App maßgeblich verbessert hat. So wurde die Möglichkeit geschaffen, Listen anzulegen, Aufgaben mit Fälligkeitsdaten, Betreff und Beschreibung zu versehen sowie Prioritäten zu setzen. Aufgaben lassen sich einzelnen Listen zuordnen, entsprechend der gewählten Liste anzeigen und gezielt durchsuchen. Darüber hinaus wurden weitere wichtige Features integriert, wie die Möglichkeit, Aufgaben abzuhaken und zu löschen, mehrere Listen parallel zu führen sowie eine Kalenderansicht zu nutzen. Auch gelöschte und abgehakte Aufgaben können angezeigt werden. Zudem wurde eine multipage Darstellung realisiert und das Design konsequent an das Branding der "Cherry Ladies" angepasst.
+
+Einige User-Stories mussten jedoch zurückgestellt bzw. konnten nicht vollständig umgesetzt werden. Dazu gehört beispielsweise die Funktion, über die Kalenderansicht direkt auf einzelne Listen zuzugreifen. Auch die Darstellung abgehakter Aufgaben als durchgestrichene, aber weiterhin sichtbare Elemente wurde bislang nicht umgesetzt.
+
+Zum Ende der Projektlaufzeit präsentiert sich die App als ein in sich stimmiges, funktionales Produkt mit einer ansprechenden Gestaltung. Sie verfügt über eine startseitige Übersicht mit einem passenden Reim und ist optisch wie funktional exakt auf das gewünschte Design abgestimmt.
+
+Insgesamt entspricht das finale Produkt in hohem Maße der zu Projektbeginn formulierten Produktvision. Fast alle geplanten User-Stories wurden erfolgreich realisiert, und die Anforderungen sowie Wünsche des Product Owners konnten umfassend berücksichtigt und umgesetzt werden.
